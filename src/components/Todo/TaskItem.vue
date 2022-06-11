@@ -3,7 +3,7 @@
     <v-list-item
       @click="$store.dispatch('doneTask', task.id)"
       :class="{ 'blue lighten-5' : task.done }"
-      class="white"
+      class="field-add-task"
       :ripple="false"
     >
       <template v-slot:default>
@@ -69,8 +69,7 @@ export default {
 </script>
 
 <style lang="sass">
-  .sortable-ghost
-    opacity: 0
-  .sortable-drag
-    box-shadow: 0 0 10px rgba(0,0,0,0.3)
+   .field-add-task.v-input--is-focused
+    .v-input__slot
+      background: rgba(31,94,129, 0.5)
 </style>

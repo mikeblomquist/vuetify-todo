@@ -9,6 +9,7 @@
     :class="{ 'closed' : searchClosed && !$store.state.search }"
     placeholder="Search"
     prepend-inner-icon="mdi-magnify"
+    hide-details="true"
     filled
     dense
     clearable

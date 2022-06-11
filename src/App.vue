@@ -72,10 +72,10 @@
             {{ $store.state.appTitle }}
           </v-toolbar-title>
         </v-row>
-        <v-row>
+        <v-row dense>
           <live-date-time />
         </v-row>
-        <v-row v-if="$route.path === '/'">
+        <v-row v-if="$route.path === '/'" dense>
           <field-add-task />
         </v-row>
       </v-container>
